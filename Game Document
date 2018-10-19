@@ -1,0 +1,15 @@
+Computer Science Game Document:
+
+Description
+  Player launches chickens into a crocodile
+  Crocodile mouth always open
+  Crocodile moves mouth up and down
+  Have different modes
+    Play for High Scores
+      No time
+    Timed mode
+      Most chickens in a minute
+    Challenge mode
+      Timed mode plus collecting crocodile poop for points
+      Gives higher scores, but harder
+Made in Unity C#
