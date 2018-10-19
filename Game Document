@@ -2,8 +2,8 @@ Computer Science Game Document:
 
 Description
   Player launches chickens into a crocodile
-  Crocodile mouth always open
-  Crocodile moves mouth up and down
+    Crocodile mouth always open
+    Crocodile moves mouth up and down
   Have different modes
     Play for High Scores
       No time
@@ -13,3 +13,11 @@ Description
       Timed mode plus collecting crocodile poop for points
       Gives higher scores, but harder
 Made in Unity C#
+  Script to make croc mouth move up and down
+  Start menu
+  Touch Controls eventually
+    initially done on PC
+  Chicken is projectile
+  Sprites for Chicken and Croc
+    can be done with GIMP
+  
