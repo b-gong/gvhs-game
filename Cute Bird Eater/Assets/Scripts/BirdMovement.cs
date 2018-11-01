@@ -6,16 +6,10 @@ public class BirdMovement : MonoBehaviour {
 
     private bool isPressed = false;
     public float releaseTime = .15f;
-    public Rigidbody2D rb; 
- 
-    void Start ()
-    {
-        
-    }
+    public Rigidbody2D rb;
 
     void Update ()
     {
-
         if (isPressed)
         {
             rb.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
