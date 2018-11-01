@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114226859451963630}
   m_Layer: 0
   m_Name: Bird
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,13 +39,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1427990797776468}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.42, y: 3.97, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.03881081, w: 0.9992466}
+  m_LocalPosition: {x: -14.554391, y: 3.4303534, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.4490004}
 --- !u!50 &50024936119005336
 Rigidbody2D:
   serializedVersion: 4
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   releaseTime: 0.15
-  rb: {fileID: 0}
+  rb: {fileID: 50024936119005336}
 --- !u!212 &212991242994206892
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -197,6 +197,6 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.09486831
+  m_Distance: 0.022362147
   m_DampingRatio: 0
   m_Frequency: 1.5
