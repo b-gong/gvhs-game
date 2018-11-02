@@ -19,9 +19,12 @@ public class Score : MonoBehaviour {
     private bool topColliderTrigger = false;
     private bool bottomColliderTrigger = false;
     private bool centerColliderTrigger = false;
+    //GameObjects
     public Transform birdPrefab;
-    public Vector2 spawnPoint;
+    public Transform spawnPoint;
     public SpringJoint2D birdHook;
+    public GameObject bird;
+    public Button respawnButton;
 
     //Score and Bird Respawn Handling
 
@@ -47,26 +50,38 @@ public class Score : MonoBehaviour {
             centerColliderTrigger = true;
         }
 
-        //Increase Score
+        //Increase Score and Respawn Bird
         if (topColliderTrigger == true)
         {
-            scoreText.text = startingText++.ToString("0");
+            startingText = startingText + 1;
+            scoreText.text = startingText.ToString("0");
             topColliderTrigger = false;
-            birdPrefab.transform.position = spawnPoint;
+            bird.SetActive(false);
+            bird.transform.SetPositionAndRotation(spawnPoint.position, spawnPoint.rotation);
+            birdHook.enabled = true;
+            bird.SetActive(true);
         }
         if (bottomColliderTrigger == true)
         {
-            scoreText.text = startingText++.ToString("0");
+            startingText = startingText + 1;
+            scoreText.text = startingText.ToString("0");
             bottomColliderTrigger = false;
-            birdPrefab.transform.position = spawnPoint;
+            bird.SetActive(false);
+            bird.transform.SetPositionAndRotation(spawnPoint.position, spawnPoint.rotation);
+            birdHook.enabled = true;
+            bird.SetActive(true);
         }
         if (centerColliderTrigger == true)
         {
-            startingText++;
-            startingText++;
+            startingText = startingText + 1;
             scoreText.text = startingText.ToString("0");
             centerColliderTrigger = false;
-            birdPrefab.transform.position = spawnPoint;
+            bird.SetActive(false);
+            bird.transform.SetPositionAndRotation(spawnPoint.position, spawnPoint.rotation);
+            birdHook.enabled = true;
+            bird.SetActive(true);
         }
+        //Respawn Button
+        
     }
 }
