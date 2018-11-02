@@ -41,6 +41,9 @@ TagManager:
   - name: Background
     uniqueID: 3227767565
     locked: 1
+  - name: CannonHole
+    uniqueID: 3913130817
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
